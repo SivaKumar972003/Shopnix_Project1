@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fb;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.image-upload {
+    margin-top: 10px;
+}
+
+.image-upload img {
+    width: 80px;
+    height: 80px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-group input[type="text"] {
+    margin-top: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back {
+    background: #e0e0e0;
+}
+
+.next {
+    background: #007bff;
+    color: white;
+}
+
+.next:hover {
+    background: #0056b3;
+}

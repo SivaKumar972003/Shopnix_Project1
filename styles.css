@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.themes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.theme-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+
+.theme-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.theme-card img .imge{
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+.theme-card h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.theme-card h3 span {
+    color: gray;
+    font-size: 14px;
+}
+
+.theme-card.selected {
+    border: 2px solid #007bff;
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background: white;
+    color: #007bff;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+.selected-btn {
+    background: #e6f4ea;
+    color: green;
+    border: 1px solid green;
+    cursor: default;
+}
+
+.next-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background: #0056b3;
+}

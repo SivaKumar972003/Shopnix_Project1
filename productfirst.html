@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="productfirstdetail.css">
+</head>
+<body>
+
+
+    <h1>Lets add your first product</h1>
+
+    <h2>Basic Details</h2>
+
+    <label>Product name</label>
+    <input type="text" placeholder="eg : anatomy book">
+
+    <label>Product Description</label>
+    <textarea placeholder="Input text"></textarea>
+
+    <label>Add Image(s)</label>
+    <div class="image-upload">
+        <img src="https://via.placeholder.com/80x80?text=+" alt="Upload">
+    </div>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" checked> this product has an SKU code
+        </label>
+        <input type="text" placeholder="eg : PROD0001">
+
+        <label>
+            <input type="checkbox"> this product has an HSN/SAC code
+        </label>
+    </div>
+
+    <hr>
+
+    <h2>Pricing Details</h2>
+
+    <label>
+        <input type="checkbox" checked> price inclusive of GST
+    </label>
+
+    <div class="grid">
+        <div>
+            <label>Net price</label>
+            <input type="number" placeholder="eg : 80">
+        </div>
+        <div>
+            <label>List price</label>
+            <input type="number" placeholder="eg : 100">
+        </div>
+        <div>
+            <label>Discount percentage</label>
+            <input type="number" placeholder="eg : 40">
+        </div>
+        <div>
+            <label>GST rate</label>
+            <input type="number" placeholder="eg : 20">
+        </div>
+        <div>
+            <label>Shipping charges (if any)</label>
+            <input type="number" placeholder="eg : 40">
+        </div>
+        <div>
+            <label>Stock level</label>
+            <input type="number" placeholder="eg : 110">
+        </div>
+    </div>
+
+    <div class="button-container">
+       <a href="add_product.html"> <button class="btn back">Back</button></a>
+        <a href="final.html"><button class="btn next">Next</button> </a>
+    </div>
+
+
+<script >
+    document.addEventListener("DOMContentLoaded", function () {
+    const backBtn = document.querySelector(".back");
+    const nextBtn = document.querySelector(".next");
+
+    backBtn.addEventListener("click", () => {
+        alert("Going back...");
+        
+    });
+
+    nextBtn.addEventListener("click", () => {
+        alert("Proceeding to next step...");
+        
+    });
+});
+</script>
+</body>
+</html>
